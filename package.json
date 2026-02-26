@@ -1,19 +1,19 @@
 {
   "engines": {
-    "node": "22.20.0"
+    "node": "22"
   },
   "name": "wanderlust",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "npm install --legacy-peer-deps"
-  },
+  "start": "node app.js",
+  "dev": "nodemon app.js"
+},
   "author": "Kashish",
   "license": "MIT",
   "dependencies": {
-    "cloudinary": "^2.8.0",
+    "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^6.0.0",
     "dotenv": "^17.2.3",
