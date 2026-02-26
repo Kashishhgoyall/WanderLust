@@ -4,7 +4,6 @@ if (process.env.NODE_ENV != 'production') {
 
 const express = require('express');
 const app = express();
-app.set("trust proxy", 1);
 const mongoose = require('mongoose');
 const path = require('path');
 const methodOverride = require('method-override');
@@ -119,6 +118,6 @@ app.use((err, req, res, next) => {
     // res.status(status).send(message);
 });
 
-// app.listen(port, () => {
-//   console.log(`Server is listening on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
